@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
-*prints Holberton
+*prints string Holberton
 *
-*Return (0) 
+*Return 0 (void)
 */
-int main(void)  
+int main(void)
 {
 	_putchar(72);
 	_putchar(111);
