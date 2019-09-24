@@ -4,17 +4,18 @@
  *
  * Return: Always 0.
  */
-void print_alphabet_x10 (void)
+void print_alphabet_x10(void) /* print alphabet*/
 {
 	char y;
 	int x;
 	x = 0;
-	while (x <= 9) 
+
+	while (x <= 9)
 	{
-	for (y = 97 ; y <= 122 ; y++) 	
-	{	
+	for (y = 97 ; y <= 122 ; y++)
+	{
 	_putchar(y);
-	}	
+	}
 	x++;
 	_putchar(10);
 	}
