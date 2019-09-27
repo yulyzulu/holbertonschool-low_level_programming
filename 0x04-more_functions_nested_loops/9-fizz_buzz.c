@@ -11,7 +11,7 @@ int main(void)
 	b = 3;
 	c = 5;
 
-	for (a = 1; a <= 100; a++)
+	for (a = 1; a < 100; a++)
 	{
 		d = a % b;
 		e = a % c;
@@ -29,11 +29,6 @@ int main(void)
 			else if ((a >= e) && (e == 0))
 			{
 				printf("Buzz ");
-
-				if (a == 100)
-				{
-					printf("Buzz");
-				}
 			}
 			else
 			{
@@ -41,6 +36,7 @@ int main(void)
 			}
 		}
 	}
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
