@@ -2,7 +2,7 @@
 /**
 *print_diagonal- print n diagonal
 *@n: integer
-*Return: \
+*Return: spaces and backslash
 */
 void print_diagonal(int n)
 {
@@ -15,7 +15,7 @@ void print_diagonal(int n)
 	else
 	{
 		for (a = 0; a < n; a++)
-	{
+		{
 			for (b = 0; b < n; b++)
 			{
 				if (a > b)
@@ -31,6 +31,6 @@ void print_diagonal(int n)
 				}
 			}
 			_putchar('\n');
-	}
+		}
 	}
 }
