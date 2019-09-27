@@ -1,28 +1,28 @@
 #include <stdio.h>
 /**
+*main- print numbers and letters
 *
-*
-*
+*Return: 0
 */
 int main(void)
 {
 	int a, b, c, d, e;
+
 	b = 3;
 	c = 5;
 
-
-	for (a = 1; a <=100; a++)
-	{ 
+	for (a = 1; a <= 100; a++)
+	{
 		d = a % b;
 		e = a % c;
-		
-		if (((a >= b) && (d==0)) && ((a >= e) && (e == 0)))
-                {
-                        printf("FizzBuzz ");
+
+		if (((a >= b) && (d == 0)) && ((a >= e) && (e == 0)))
+		{
+			printf("FizzBuzz ");
 		}
 		else
 		{
-			if ((a >= b) && (d==0))
+			if ((a >= b) && (d == 0))
 			{
 				printf("Fizz ");
 			}
@@ -37,5 +37,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
