@@ -29,6 +29,11 @@ int main(void)
 			else if ((a >= e) && (e == 0))
 			{
 				printf("Buzz ");
+
+				if (a == 100)
+				{
+					printf("Buzz");
+				}
 			}
 			else
 			{
