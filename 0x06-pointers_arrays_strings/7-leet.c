@@ -14,13 +14,15 @@ char *leet(char *str)
 	i = 0;
 	while (str[i] != 0)
 	{
-		for (j = 0; letters[j] <= str[i] && letters[j] != 0 ; j++)
+		j = 0;
+		while (letters[j] != 0)
 		{
 			if (str[i] == letters[j])
 			{
 				str[i] = numbers[j];
-				str[0] = numbers[j];
+
 			}
+		j++;
 		}
 	i++;
 	}
