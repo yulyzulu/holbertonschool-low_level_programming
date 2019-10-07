@@ -4,7 +4,7 @@
 *@s: array
 *@b: char
 *@n: integer
-*Returns: s
+*Return: s
 */
 char *_memset(char *s, char b, unsigned int n)
 {
