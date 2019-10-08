@@ -2,7 +2,7 @@
 /**
 *print_chessboard- print the chessboard
 *@a: character
-*@8: integer
+*8: integer
 *Return:
 */
 void print_chessboard(char (*a)[8])
