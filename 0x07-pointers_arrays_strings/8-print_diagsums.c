@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
 *print_diagsums- prints the sum ot the two diagonals
 *@a: array
@@ -7,23 +8,18 @@
 */
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	int *sum = 0;
+	int i, j, x, y;
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-			{
-				sum = sum + a[i][j];
-			}
-			else if (i + j == size - 1)
-			{
-				sum = sum + a[i][j];
-			}
-		}
+		x = x + a[(size + 1) * i];
 	}
+		printf("%d, ", x);
 
-return (sum);
+	for (j = 0; j < size; j++)
+	{
+		y = y + a[(size - 1) * (j + 1)];
+
+	}
+		printf("%d\n", y);
 }
