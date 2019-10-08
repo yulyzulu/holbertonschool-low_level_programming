@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
-*
-*
-*
+**_strstr- locates a substring
+*@haystack: array
+*@needle: array
+*Return: pointer or NULL
 */
 char *_strstr(char *haystack, char *needle)
 {
@@ -11,17 +12,17 @@ char *_strstr(char *haystack, char *needle)
 	i = 0;
 	while (haystack[i] != 0)
 	{
-		if (haystack[i] == needle[0])
+		j = 0;
+		while (needle[j] != 0);
 		{
-			j = 0;
-			while (needle[j] != 0 && haystack[j+i] != 0 || needle[j] == haystack[j+i])
+			if (haystack[i] == needle[j])
 			{
-				j++;
+				haystack += i;
+				return (haystack);
 			}
-			if (needle[j] == 0)
-			{
-				i++;
-			}
+			j++;
 		}
-	}
+		i++;
+}
+return (0);
 }
