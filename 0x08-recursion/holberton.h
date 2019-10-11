@@ -9,4 +9,4 @@ int square_root(int n, int x);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int primenumb(int n, int x);
-int value_palindrome(char *s, int x, int y);
+int value_palindrome(char *s, int x);

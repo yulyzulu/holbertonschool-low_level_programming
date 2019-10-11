@@ -6,29 +6,34 @@
 */
 int is_palindrome(char *s)
 {
-	return (value_palindrome(s, 1, 1));
+	return (value_palindrome(*s, 0));
 }
+int _strlen_recursion(char *s)
+
 /**
-*value_palindrome- return if a sstring is a polindrome
+*value_palindrome- return if a string is a polindrome
 *@s: string
 *@x: integer
 *@y: integer
 *Return: 0 or 1
 */
-int value_palindrome(char *s, int x, int y)
+int value_palindrome(char *s, int x)
 {
+	length = _strleng_recursion(*s)	- 1;
+
 	if (s == 0)
 	{
 		return (1);
 	}
-	if (s[x] != s[y])
+	else if ((s[length - x]) == s[x])
+	{
+		return (value_palindrome(s, x + 1));
+		return (1);
+	}
+	else
 	{
 		return (0);
-	}
-	if (x < y + 1)
-	{
-		return (value_palindrome(s, x  + 1, y - 1));
-		return (1);
+	
 	}
 return (0);
 }
