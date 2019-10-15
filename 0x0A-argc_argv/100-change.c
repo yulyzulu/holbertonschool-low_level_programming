@@ -9,42 +9,21 @@
 int main(int argc, char *argv[])
 {
 
-	int i, coins;
+	int i, coins = 0;
 
-	if (argc != 2)
+	if (argc == 2)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	i = atoi(argv[1]);
-	coins = 0;
-	while (i > 0)
-	{	if (i >= '0' && i <= '9')
+		for (i = 1; i < argc; i++)
 		{
-			if (i > 25)
+			if (i >= '0' && i <= '9')
 			{
-				i = i - 25;
-			}
-			else if (i > 10)
-			{
-				i = i - 10;
-			}
-			else if (i > 5)
-			{
-				i = i -5;
-			}
-			else if (i > 2)
-			{
-				i = i - 2;
-			}
-			else if (i > 1)
-			{
-				i = i - 1;
+				coins = atoi(argv[i]);
 			}
 		}
-		++coins;
-		i++;
+		printf("%d\n", coins);
+		return (0);
 	}
-	printf("%d\n", coins);
-	return (0);	
+	printf("Error\n");
+	return (1);
+
 }
