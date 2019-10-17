@@ -7,7 +7,7 @@
 */
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
 	while (*s != 0)
 	{
@@ -25,7 +25,7 @@ int _strlen(char *s)
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int leng1, leng2, i, j;
+	unsigned int leng1 , leng2, i, j;
 	char *p;
 
 	if (s1 == NULL)
@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	p = malloc((leng1 + n + 1) * sizeof(char));
 
-	if (p == 0)
+	if (p == '\0')
 	{
 		return (NULL);
 	}
