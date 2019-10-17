@@ -54,15 +54,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (k = 0; k < leng1; k++)
+	for (k = 0; s1[k] != '\0'; k++)
 	{
 		p[k] = s1[k];
 	}
-	for (l = 0; k < leng; l++)
+	for (l = 0; l < n; l++)
 	{
-		p[k] = s2[l];
-		k++;
+		p[k + l] = s2[l];
 	}
-	p[k] = '\0';
+	p[k + l] = '\0';
 	return (p);
 }
