@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
 *_strlen- count characters
 *@s: pointer of variable s
@@ -45,13 +46,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (k = 0; s1[k] != '\0'; k++)
+	else 
 	{
-		p[k] = s1[k];
-	}
-	for (l = 0; l < n; l++)
-	{
-		p[k + l] = s2[l];
+		for (k = 0; s1[k] != '\0'; k++)
+		{
+			p[k] = s1[k];
+		}
+		for (l = 0; l < n; l++)
+		{
+			p[k + l] = s2[l];
+		}
 	}
 	p[k + l] = '\0';
 	return (p);
