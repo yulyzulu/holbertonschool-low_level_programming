@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
 *main- performs simple operations
 *@argc: int
@@ -23,9 +24,9 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 
 	pointfunc(num1, num2);
-	
+
 	result = pointfunc(num1, num2);
-	if (result ==NULL)
+	if (result == '\n')
 	{
 		printf("Error\n");
 	}
@@ -34,5 +35,5 @@ int main(int argc, char **argv)
 	printf("%d\n", result);
 	}
 
-
+	return (result);
 }
