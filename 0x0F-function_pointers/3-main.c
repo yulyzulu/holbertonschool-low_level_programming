@@ -26,13 +26,13 @@ int main(int argc, char **argv)
 	pointfunc(num1, num2);
 
 	result = pointfunc(num1, num2);
-	if (result == '\n')
+	if (result == 0)
 	{
 		printf("Error\n");
 	}
 	else
 	{
-	printf("%d\n", result);
+		printf("%d\n", result);
 	}
 
 	return (result);
