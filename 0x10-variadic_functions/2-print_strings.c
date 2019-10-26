@@ -32,14 +32,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 			else
 			{
-				if (i < (n - 1))
-				{
-					printf("(nil)%c ", *separator);
-				}
-				else
-				{
-					printf("(nil)");
-				}
+				p = "(nill)"; 
 			}
 		}
 		else
