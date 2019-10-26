@@ -27,6 +27,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 
 		}
+		else
+		{
+			printf("%d", va_arg(list, unsigned int));
+		}
 	}
 	va_end(list);
 	printf("\n");
