@@ -29,13 +29,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
+			printf("%s", p);
 			if (i < (n - 1))
 			{
-				printf("%s%c ", p, *separator);
-			}
-			else
-			{
-				 printf("%s", p);
+				printf("%c ", *separator);
 			}
 		}
 	}
