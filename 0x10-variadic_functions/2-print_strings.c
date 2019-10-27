@@ -17,27 +17,26 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		p = va_arg(list, char *);
+
+		if (separator == NULL)
+		{
+			printf("%s", p);
+		}
+
+		if (p == NULL)
+		{
+			p = "(nill)";
+		}
 		if (separator != NULL)
 		{
-			if (p != NULL)
+			if (i < (n - 1))
 			{
-				if (i < (n - 1))
-				{
-					printf("%s%c ", p, *separator);
-				}
+				printf("%s%c ", p, *separator);
+			}
 				else
 				{
 					printf("%s", p);
 				}
-			}
-			else
-			{
-				p = "(nill)"; 
-			}
-		}
-		else
-		{
-			printf("%s", p);
 		}
 	}
 	va_end(list);
