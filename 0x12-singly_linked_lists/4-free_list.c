@@ -1,8 +1,7 @@
 #include "lists.h"
 /**
-*
-*
-*
+*free_list- free a list_t list
+*@head: pointer
 */
 void free_list(list_t *head)
 {
@@ -12,6 +11,6 @@ void free_list(list_t *head)
 	{
 		free(last->str);
 		free(last);
-
+		last = last->next;
 	}
 }
