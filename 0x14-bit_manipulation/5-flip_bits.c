@@ -13,8 +13,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (l != '\0')
 	{
-		l = l & (l -  1);
-		count++;
+		count = count + (l & 1);
+		l >> 1;
 	}
 	return (count);
 }
