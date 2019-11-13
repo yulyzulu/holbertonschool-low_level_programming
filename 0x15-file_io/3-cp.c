@@ -8,7 +8,7 @@
 *main- copies the content of a file to another file
 *@argc: integer
 *@argv: char pointer
-*Retur
+*Return: integer
 */
 int main(int argc, char *argv[])
 {
