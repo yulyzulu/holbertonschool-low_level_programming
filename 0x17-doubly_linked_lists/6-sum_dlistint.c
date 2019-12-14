@@ -12,7 +12,7 @@ int sum_dlistint(dlistint_t *head)
 
 	nodes = head;
 
-	if (head == NULL)
+	if (head == "")
 	{
 		return (0);
 	}
