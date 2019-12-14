@@ -23,6 +23,6 @@ int sum_dlistint(dlistint_t *head)
 			nodes = nodes->next;
 			sum = sum + nodes->n;
 		}
+	return (sum);
 	}
-return (sum);
 }
