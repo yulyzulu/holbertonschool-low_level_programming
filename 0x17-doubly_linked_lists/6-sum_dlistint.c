@@ -6,13 +6,13 @@
 */
 int sum_dlistint(dlistint_t *head)
 {
-	int sum;
+	int sum = 0;
 
 	dlistint_t *nodes;
 
 	nodes = head;
 
-	if (head == "")
+	if (head == NULL)
 	{
 		return (0);
 	}
