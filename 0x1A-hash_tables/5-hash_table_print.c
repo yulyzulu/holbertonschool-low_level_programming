@@ -7,23 +7,18 @@
 *
 *
 */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+void hash_table_print(const hash_table_t *ht)
 {
-	int i;
-	hash_table_t *temp1;
+	unsigned int i;
 
-	temp1 = ht;
-	while (temp1->next)
+	printf("{");
+	for (i = 0; i < ht->size ; i++)
 	{
-		temp1->next;
+ 		if (ht->array[i] != NULL)
+        	{
+			printf("'%s' : '%s', ", ht->array[i]->key, ht->array[i]->value);
+		}
+		
 	}
-
-	if (key == NULL)
-                return (0);
-
-	for (i = 0; i < temp1; i++)
-	{
-		printf("/{%s : %s/}", ht[i].value, ht[i].key);
-	}
-	return (0);
+	printf("}\n");
 }
