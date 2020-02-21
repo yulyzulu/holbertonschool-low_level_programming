@@ -1,0 +1,15 @@
+# Makefile with more variables
+
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(*.o)
+NAME = holberton
+
+all: $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
+
+main.o: main.c m.h
+	$(CC) -c main.c
+
+holberton.o: holberton.c m.h
+	$(CC) -c holberton.c
