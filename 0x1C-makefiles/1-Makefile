@@ -1,7 +1,7 @@
 # Makefile with variables
 
-CC := gcc
-SRC := main.c holberton.c
+CC = gcc
+SRC = main.c holberton.c
 
 all: holberton
 
