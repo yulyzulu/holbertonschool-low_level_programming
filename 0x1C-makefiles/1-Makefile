@@ -1,12 +1,12 @@
 # Makefile with variables
 
-CC = gcc
-SRC = main.c holberton.c
+CC := gcc
+SRC := main.c holberton.c
 
 all: holberton
 
 holberton: main.o holberton.o
-	$(CC) -o holberton holberton.o main.o
+	$(CC) $(SRC) -o holberton
 
 main.o: main.c m.h
 	$(CC) -c main.c
