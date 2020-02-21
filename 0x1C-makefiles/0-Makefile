@@ -1,0 +1,12 @@
+# First Makefile
+
+all: holberton
+
+holberton: holberton.o main.o
+	gcc -o holberton holberton.o main.o
+
+main.o: main.c m.h
+	gcc -c main.c
+
+holberton.o: holberton.c m.h
+	gcc -c holberton.c
