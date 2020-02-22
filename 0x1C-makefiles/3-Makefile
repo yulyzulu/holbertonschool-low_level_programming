@@ -20,4 +20,5 @@ fclean:
 	$(oclean)
 
 re:
+	$(fclean)
 	$(make)
