@@ -10,15 +10,14 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(rm -f *~)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(rm -f) $(OBJ)
+	$(RM) $(OBJ)
 
 fclean:
 	$(clean)
 	$(oclean)
-	$(rm -f) $(NAME)
 
 re:
 	$(make)
