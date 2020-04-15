@@ -15,6 +15,8 @@ int binary_search(int *array, size_t size, int value)
 	min = 0;
 	max = size - 1;
 
+	if (array == NULL)
+		return (-1);
 	while (min <= max)
 	{
 		mid = (min + max) / 2;
