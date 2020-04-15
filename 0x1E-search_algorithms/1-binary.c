@@ -20,28 +20,20 @@ int binary_search(int *array, size_t size, int value)
 	while (min <= max)
 	{
 		mid = (min + max) / 2;
+		printf("Searching in array: ");
+
+		for (i = min; i < max; i++)
+			printf("%d, ", array[i]);
+
+		if (i == max)
+			printf("%d\n", array[i]);
+
 		if (array[mid] < value)
-		{
-			printf("Searching in array: ");
-			for (i = min; i < max; i++)
-			{
-				printf("%d, ", array[i]);
-			}
-			if (i == max)
-				printf("%d\n", array[i]);
 			min = mid + 1;
-		}
+
 		else if (array[mid] > value)
-		{
-			printf("Searching in array: ");
-			for (i = min; i < max; i++)
-			{
-				printf("%d, ", array[i]);
-			}
-			if (i == max)
-				printf("%d\n", array[i]);
 			max = mid - 1;
-		}
+
 		else
 			return (mid);
 	}
